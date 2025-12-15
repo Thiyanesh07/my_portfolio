@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & ML Enthusiast - 3D Interactive Portfolio">
+    <title>Thiyanesh - AI/ML Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="canvas3d"></canvas>
+    
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <span class="logo-text">THIYANESH</span>
+                    <span class="logo-dot"></span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <i class="fas fa-brain"></i>
+                    <span>AI & Machine Learning</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Hi, I'm <span class="gradient-text">Thiyanesh</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    I build intelligent systems with <span class="typewriter"></span>
+                </p>
+                
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-scroll" data-aos="fade" data-aos-delay="500">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating 3D Cards -->
+        <div class="floating-cards">
+            <div class="float-card" style="--delay: 0s">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="float-card" style="--delay: 1s">
+                <i class="fas fa-brain"></i>
+            </div>
+            <div class="float-card" style="--delay: 2s">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="float-card" style="--delay: 1.5s">
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="IMG_20240808_183049-removebg-preview.png" alt="Thiyanesh">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-title">Student & AI/DS Enthusiast</h3>
+                    <p class="about-text">
+                        I'm currently pursuing my studies with a deep passion for Artificial Intelligence, 
+                        Data Science and Machine Learning. I love exploring technologies and building 
+                        intelligent systems that solve real-world problems.
+                    </p>
+                    <p class="about-text">
+                        My journey in AI/ML has led me to work on various projects ranging from computer vision 
+                        to natural language processing. I'm constantly learning and pushing the boundaries of 
+                        what's possible with data and algorithms.
+                    </p>
+                    
+                    <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-box">
+                            <span class="stat-value">1+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">7.8</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">1+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning & AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Model Training</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-eye"></i>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">YOLO</span>
+                        <span class="skill-tag">Object Detection</span>
+                        <span class="skill-tag">Image Processing</span>
+                        <span class="skill-tag">Face Recognition</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Natural Language Processing</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">BERT</span>
+                        <span class="skill-tag">Text Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Science & Analytics</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack-section" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="tech-stack-title">Technologies & Tools</h3>
+                <div class="tech-grid">
+                    <div class="tech-badge">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fas fa-code"></i>
+                        <span>C</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-badge">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="edu-date">2024 - 2028</span>
+                    <h3>Bachelor of Technology in AI&DS</h3>
+                    <h4>Bannari Amman Institute of Technology</h4>
+                    <p>Specializing in Artificial Intelligence and Data Science. Current GPA: 7.8/10. Relevant coursework in Machine Learning, Deep Learning, Data Structures, Algorithms, and Computer Vision.</p>
+                    <div class="edu-footer">
+                        <span class="edu-status">In Progress</span>
+                    </div>
+                </div>
+                <div class="education-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="edu-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <span class="edu-date">2022 - 2024</span>
+                    <h3>Higher Secondary Education</h3>
+                    <h4>KG Matric Higher Secondary School</h4>
+                    <p>Completed in Science stream. Scored 89%. Strong foundation in Mathematics, Physics, and Computer Science.</p>
+                    <div class="edu-footer">
+                        <span class="edu-status" style="background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3); color: #8b5cf6;">Completed</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications - Coming Soon -->
+            <!-- <div class="section-header" data-aos="fade-up" style="margin-top: 4rem;">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-ribbon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Deep Learning Specialization</h3>
+                    <p class="cert-provider">Coursera - deeplearning.ai</p>
+                    <p class="cert-desc">Comprehensive study of neural networks, CNNs, RNNs, and sequence models.</p>
+                    <span class="cert-year">2024</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot_2025-12-15-18-14-42-90_99c04817c0de5652397fc8b56c3b3817.jpg" alt="Face Attendance System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <h3>Face Attendance System</h3>
+                        <p>Built a facial recognition-based attendance system using OpenCV and machine learning algorithms. Achieved 90% accuracy in real-time scenarios.</p>
+                        <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                            <span>View Project</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- More Projects Coming Soon -->
+                <!-- <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x500/1a1a2e/00d4ff?text=Coming+Soon" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Coming Soon</span>
+                        </div>
+                        <h3>More Projects Coming</h3>
+                        <p>Working on exciting new projects in AI and Machine Learning.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">Services</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning Models</h3>
+                    <p>Develop custom ML models tailored to your specific business needs using state-of-the-art algorithms.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning Solutions</h3>
+                    <p>Build neural networks for complex pattern recognition and prediction tasks with high accuracy.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Create image processing and object detection systems for automation and quality control.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>NLP Applications</h3>
+                    <p>Develop text analysis, chatbots, and language processing solutions using modern NLP techniques.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights through advanced statistical analysis and visualization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>thiyanesh7777@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7339307077</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Coimbatore, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Thiyanesh07" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Thiyanesh. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Thiyanesh07" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            // Initialize EmailJS with your Public Key
+            emailjs.init({
+                publicKey: "mCsJnxufqEcCgs0b5", // Replace with your EmailJS public key
+            });
+        })();
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
