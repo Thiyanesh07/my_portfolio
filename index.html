@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AI & ML Enthusiast - 3D Interactive Portfolio">
     <title>Thiyanesh - Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' fill='%2300d4ff'>T</text></svg>">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' fill='%2300d4ff'>T</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- 3D Canvas Background -->
     <canvas id="canvas3d"></canvas>
-    
+
     <!-- Cursor Glow Effect -->
     <div class="cursor-glow"></div>
-    
+
     <!-- Scroll Progress -->
     <div class="scroll-progress"></div>
-    
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -30,13 +35,13 @@
                     <span class="logo-text">THIYANESH</span>
                     <span class="logo-dot"></span>
                 </a>
-                
+
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                
+
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -59,15 +64,15 @@
                     <i class="fas fa-brain"></i>
                     <span>AI & Machine Learning</span>
                 </div>
-                
+
                 <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
                     Hi, I'm <span class="gradient-text">Thiyanesh</span>
                 </h1>
-                
+
                 <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
                     I build intelligent systems with <span class="typewriter"></span>
                 </p>
-                
+
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
                     <a href="#projects" class="btn btn-primary">
                         <span>Explore Work</span>
@@ -78,14 +83,14 @@
                         <i class="fas fa-paper-plane"></i>
                     </a>
                 </div>
-                
+
                 <div class="hero-scroll" data-aos="fade" data-aos-delay="500">
                     <span>Scroll to explore</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
-        
+
         <!-- Floating 3D Cards -->
         <div class="floating-cards">
             <div class="float-card" style="--delay: 0s">
@@ -110,7 +115,7 @@
                 <span class="section-tag">Get To Know Me</span>
                 <h2 class="section-title">About Me</h2>
             </div>
-            
+
             <div class="about-grid">
                 <div class="about-image" data-aos="fade-right">
                     <div class="image-wrapper">
@@ -118,20 +123,20 @@
                         <div class="image-overlay"></div>
                     </div>
                 </div>
-                
+
                 <div class="about-content" data-aos="fade-left">
                     <h3 class="about-title">Student & AI/DS Enthusiast</h3>
                     <p class="about-text">
-                        I'm currently pursuing my studies with a deep passion for Artificial Intelligence, 
-                        Data Science and Machine Learning. I love exploring technologies and building 
+                        I'm currently pursuing my studies with a deep passion for Artificial Intelligence,
+                        Data Science and Machine Learning. I love exploring technologies and building
                         intelligent systems that solve real-world problems.
                     </p>
                     <p class="about-text">
-                        My journey in AI/ML has led me to work on various projects ranging from computer vision 
-                        to natural language processing. I'm constantly learning and pushing the boundaries of 
+                        My journey in AI/ML has led me to work on various projects ranging from computer vision
+                        to natural language processing. I'm constantly learning and pushing the boundaries of
                         what's possible with data and algorithms.
                     </p>
-                    
+
                     <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
                         <div class="stat-box">
                             <span class="stat-value">4+</span>
@@ -158,7 +163,7 @@
                 <span class="section-tag">What I Know</span>
                 <h2 class="section-title">Skills & Expertise</h2>
             </div>
-            
+
             <div class="skills-container">
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <div class="category-header">
@@ -175,7 +180,7 @@
                         <span class="skill-tag">Model Training</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <div class="category-header">
                         <i class="fas fa-eye"></i>
@@ -189,7 +194,7 @@
                         <span class="skill-tag">Face Recognition</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
                     <div class="category-header">
                         <i class="fas fa-comments"></i>
@@ -201,7 +206,7 @@
                         <span class="skill-tag">Text Analytics</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                     <div class="category-header">
                         <i class="fas fa-chart-line"></i>
@@ -218,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="tech-stack-section" data-aos="fade-up" data-aos-delay="500">
                 <h3 class="tech-stack-title">Technologies & Tools</h3>
                 <div class="tech-grid">
@@ -270,7 +275,7 @@
                 <span class="section-tag">My Journey</span>
                 <h2 class="section-title">Education</h2>
             </div>
-            
+
             <div class="education-grid">
                 <div class="education-card" data-aos="flip-left" data-aos-delay="100">
                     <div class="edu-icon">
@@ -279,7 +284,9 @@
                     <span class="edu-date">2024 - 2028</span>
                     <h3>Bachelor of Technology in AI&DS</h3>
                     <h4>Bannari Amman Institute of Technology</h4>
-                    <p>Specializing in Artificial Intelligence and Data Science. Current GPA: 7.8/10. Relevant coursework in Machine Learning, Deep Learning, Data Structures, Algorithms, and Computer Vision.</p>
+                    <p>Specializing in Artificial Intelligence and Data Science. Current GPA: 7.8/10. Relevant
+                        coursework in Machine Learning, Deep Learning, Data Structures, Algorithms, and Computer Vision.
+                    </p>
                     <div class="edu-footer">
                         <span class="edu-status">In Progress</span>
                     </div>
@@ -291,13 +298,15 @@
                     <span class="edu-date">2022 - 2024</span>
                     <h3>Higher Secondary Education</h3>
                     <h4>KG Matric Higher Secondary School</h4>
-                    <p>Completed in Science stream. Scored 89%. Strong foundation in Mathematics, Physics, and Biology.</p>
+                    <p>Completed in Science stream. Scored 89%. Strong foundation in Mathematics, Physics, and Biology.
+                    </p>
                     <div class="edu-footer">
-                        <span class="edu-status" style="background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3); color: #8b5cf6;">Completed</span>
+                        <span class="edu-status"
+                            style="background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3); color: #8b5cf6;">Completed</span>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -308,7 +317,7 @@
                 <span class="section-tag">Achievements</span>
                 <h2 class="section-title">Certifications & Badges</h2>
             </div>
-            
+
             <div class="certifications-grid">
                 <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="cert-ribbon">
@@ -316,33 +325,55 @@
                     </div>
                     <h3>Machine Learning Foundations</h3>
                     <p class="cert-provider">Amazon Web Services (AWS)</p>
-                    <p class="cert-desc">Completed foundational concepts in machine learning and model lifecycle. Gained hands-on understanding of ML principles, model training, evaluation, and deployment strategies.</p>
-                    <a href="https://www.credly.com/earner/earned/badge/bb4d90d7-3152-4e71-9e45-e7e7fa2dcf93" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                    <p class="cert-desc">Completed foundational concepts in machine learning and model lifecycle. Gained
+                        hands-on understanding of ML principles, model training, evaluation, and deployment strategies.
+                    </p>
+                    <a href="https://www.credly.com/earner/earned/badge/bb4d90d7-3152-4e71-9e45-e7e7fa2dcf93"
+                        target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
                         <span>View Certificate</span>
                         <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
-                
+
                 <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="cert-ribbon">
                         <i class="fab fa-aws"></i>
                     </div>
                     <h3>Introduction to Generative AI</h3>
                     <p class="cert-provider">Amazon Web Services (AWS)</p>
-                    <p class="cert-desc">Gained comprehensive understanding of generative AI concepts, use cases, and real-world applications. Explored modern AI architectures and their practical implementations.</p>
-                    <a href="https://www.credly.com/earner/earned/badge/8d8b514d-3fe9-4ba0-99a3-0a1f2f47322c" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                    <p class="cert-desc">Gained comprehensive understanding of generative AI concepts, use cases, and
+                        real-world applications. Explored modern AI architectures and their practical implementations.
+                    </p>
+                    <a href="https://www.credly.com/earner/earned/badge/8d8b514d-3fe9-4ba0-99a3-0a1f2f47322c"
+                        target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-ribbon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Web Development Fundamentals</h3>
+                    <p class="cert-provider">IBM</p>
+                    <p class="cert-desc">Acquired foundational knowledge in front-end web development including HTML,
+                        CSS, and JavaScript. Learned modern web development practices and responsive design principles.
+                    </p>
+                    <a href="https://www.credly.com/earner/earned/badge/89f1e616-f81a-4cb3-b971-149ab163d0a7"
+                        target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
                         <span>View Certificate</span>
                         <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>
-            
+
             <!-- Hackathon Experience -->
             <div class="section-header" data-aos="fade-up" style="margin-top: 4rem;">
                 <span class="section-tag">Competition</span>
                 <h2 class="section-title">Hackathon Experience</h2>
             </div>
-            
+
             <div class="certifications-grid">
                 <div class="cert-card hackathon-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="cert-ribbon">
@@ -350,41 +381,54 @@
                     </div>
                     <h3>Generative AI Hackathon</h3>
                     <p class="cert-provider">KPR Institute of Engineering and Technology</p>
-                    <h4 style="color: var(--primary); margin: 0.5rem 0; font-size: 1rem;">Project: Farmer Assistant AI</h4>
-                    <p class="cert-role" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;"><i class="fas fa-user-cog"></i> Role: Model Development & API Integration</p>
+                    <h4 style="color: var(--primary); margin: 0.5rem 0; font-size: 1rem;">Project: Farmer Assistant AI
+                    </h4>
+                    <p class="cert-role" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                        <i class="fas fa-user-cog"></i> Role: Model Development & API Integration
+                    </p>
                     <div class="hackathon-highlights">
-                        <ul style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; color: var(--text-secondary);">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>Built a Generative AI–based assistant to support farmers with crop-related queries</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>Contributed to model selection, prompt design, and basic model training</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>Worked under strict time constraints, improving time management skills</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>Collaborated effectively with team members in a competitive environment</li>
+                        <ul
+                            style="list-style: none; padding: 0; text-align: left; font-size: 0.9rem; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary); margin-right: 0.5rem;"></i>Built a Generative AI–based
+                                assistant to support farmers with crop-related queries</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary); margin-right: 0.5rem;"></i>Contributed to model
+                                selection, prompt design, and basic model training</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary); margin-right: 0.5rem;"></i>Worked under strict time
+                                constraints, improving time management skills</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
+                                    style="color: var(--primary); margin-right: 0.5rem;"></i>Collaborated effectively
+                                with team members in a competitive environment</li>
                         </ul>
                     </div>
-                    <a href="https://github.com/Thiyanesh07/Gen_AI_Cicada-25" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                    <a href="https://github.com/Thiyanesh07/Gen_AI_Cicada-25" target="_blank" class="btn btn-outline"
+                        style="margin-top: 1rem;">
                         <span>View on GitHub</span>
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
-            
+
             <!-- Areas of Interest -->
             <div class="section-header" data-aos="fade-up" style="margin-top: 4rem;">
                 <span class="section-tag">Focus Areas</span>
                 <h2 class="section-title">Areas of Interest</h2>
             </div>
-            
-            <div class="interests-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
-                <div class="interest-item" data-aos="zoom-in" data-aos-delay="100" style="background: var(--card-bg); padding: 1.5rem 2rem; border-radius: 15px; border: 1px solid var(--border-color); text-align: center; min-width: 200px;">
-                    <i class="fas fa-eye" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
-                    <h4 style="color: var(--text-primary); margin: 0;">Computer Vision</h4>
+
+            <div class="interests-grid">
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-eye"></i>
+                    <h4>Computer Vision</h4>
                 </div>
-                <div class="interest-item" data-aos="zoom-in" data-aos-delay="200" style="background: var(--card-bg); padding: 1.5rem 2rem; border-radius: 15px; border: 1px solid var(--border-color); text-align: center; min-width: 200px;">
-                    <i class="fas fa-brain" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
-                    <h4 style="color: var(--text-primary); margin: 0;">Applied AI</h4>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-brain"></i>
+                    <h4>Applied AI</h4>
                 </div>
-                <div class="interest-item" data-aos="zoom-in" data-aos-delay="300" style="background: var(--card-bg); padding: 1.5rem 2rem; border-radius: 15px; border: 1px solid var(--border-color); text-align: center; min-width: 200px;">
-                    <i class="fas fa-cogs" style="font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem;"></i>
-                    <h4 style="color: var(--text-primary); margin: 0;">AI Model Development</h4>
+                <div class="interest-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-cogs"></i>
+                    <h4>AI Model Development</h4>
                 </div>
             </div>
         </div>
@@ -397,14 +441,16 @@
                 <span class="section-tag">My Work</span>
                 <h2 class="section-title">Featured Projects</h2>
             </div>
-            
+
             <div class="projects-grid">
                 <!-- Project 1: AI Powered Face Recognition Attendance System -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
-                        <img src="Screenshot_2025-12-15-18-14-42-90_99c04817c0de5652397fc8b56c3b3817.jpg" alt="Face Attendance System">
+                        <img src="Screenshot_2025-12-15-18-14-42-90_99c04817c0de5652397fc8b56c3b3817.jpg"
+                            alt="Face Attendance System">
                         <div class="project-overlay">
-                            <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank"
+                                class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -414,14 +460,16 @@
                             <span class="tag">Python</span>
                         </div>
                         <h3>AI Powered Face Recognition Attendance System</h3>
-                        <p>Contributed to frontend design and facial recognition model for an AI-powered attendance system. Role: Frontend & Model Development Contributor.</p>
-                        <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        <p>Contributed to frontend design and facial recognition model for an AI-powered attendance
+                            system. Role: Frontend & Model Development Contributor.</p>
+                        <a href="https://github.com/Thiyanesh07/Attendance_System" target="_blank"
+                            class="btn btn-outline" style="margin-top: 1rem;">
                             <span>View Project</span>
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Project 2: CNN Based Butterfly Species Classification -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
@@ -429,7 +477,8 @@
                             <i class="fas fa-butterfly" style="font-size: 4rem; color: var(--primary);"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i
+                                    class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -439,14 +488,17 @@
                             <span class="tag">Deep Learning</span>
                         </div>
                         <h3>CNN Based Butterfly Species Classification</h3>
-                        <p>Built a CNN model to classify butterfly species. Developed image preprocessing and normalization pipeline. Integrated trained model with Flask web interface for real-time prediction.</p>
-                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        <p>Built a CNN model to classify butterfly species. Developed image preprocessing and
+                            normalization pipeline. Integrated trained model with Flask web interface for real-time
+                            prediction.</p>
+                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline"
+                            style="margin-top: 1rem;">
                             <span>View Project</span>
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Project 3: ANN Breast Cancer Classification -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="project-image">
@@ -454,7 +506,8 @@
                             <i class="fas fa-heartbeat" style="font-size: 4rem; color: var(--primary);"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i
+                                    class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -464,14 +517,17 @@
                             <span class="tag">Healthcare</span>
                         </div>
                         <h3>ANN Breast Cancer Classification</h3>
-                        <p>Implemented Artificial Neural Network for breast cancer classification. Performed data preprocessing, feature selection, and class balancing using SMOTE. Evaluated performance using standard metrics.</p>
-                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        <p>Implemented Artificial Neural Network for breast cancer classification. Performed data
+                            preprocessing, feature selection, and class balancing using SMOTE. Evaluated performance
+                            using standard metrics.</p>
+                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline"
+                            style="margin-top: 1rem;">
                             <span>View Project</span>
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Project 4: Mobile Phone Addiction Prediction using MLflow -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="project-image">
@@ -479,7 +535,8 @@
                             <i class="fas fa-mobile-alt" style="font-size: 4rem; color: var(--primary);"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Thiyanesh07" target="_blank" class="project-link"><i
+                                    class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -489,8 +546,11 @@
                             <span class="tag">Data Analysis</span>
                         </div>
                         <h3>Mobile Phone Addiction Prediction using MLflow</h3>
-                        <p>Built a model to predict phone addiction levels in teenagers. Performed exploratory data analysis and feature engineering. Used MLflow for experiment tracking, versioning, lifecycle management, and inference.</p>
-                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                        <p>Built a model to predict phone addiction levels in teenagers. Performed exploratory data
+                            analysis and feature engineering. Used MLflow for experiment tracking, versioning, lifecycle
+                            management, and inference.</p>
+                        <a href="https://github.com/Thiyanesh07" target="_blank" class="btn btn-outline"
+                            style="margin-top: 1rem;">
                             <span>View Project</span>
                             <i class="fab fa-github"></i>
                         </a>
@@ -507,24 +567,26 @@
                 <span class="section-tag">What I Offer</span>
                 <h2 class="section-title">Services</h2>
             </div>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>Machine Learning Models</h3>
-                    <p>Develop custom ML models tailored to your specific business needs using state-of-the-art algorithms.</p>
+                    <p>Develop custom ML models tailored to your specific business needs using state-of-the-art
+                        algorithms.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3>Deep Learning Solutions</h3>
-                    <p>Build neural networks for complex pattern recognition and prediction tasks with high accuracy.</p>
+                    <p>Build neural networks for complex pattern recognition and prediction tasks with high accuracy.
+                    </p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-eye"></i>
@@ -532,21 +594,23 @@
                     <h3>Computer Vision</h3>
                     <p>Create image processing and object detection systems for automation and quality control.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-comments"></i>
                     </div>
                     <h3>NLP Applications</h3>
-                    <p>Develop text analysis, chatbots, and language processing solutions using modern NLP techniques.</p>
+                    <p>Develop text analysis, chatbots, and language processing solutions using modern NLP techniques.
+                    </p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Data Analytics</h3>
-                    <p>Transform raw data into actionable insights through advanced statistical analysis and visualization.</p>
+                    <p>Transform raw data into actionable insights through advanced statistical analysis and
+                        visualization.</p>
                 </div>
             </div>
         </div>
@@ -559,7 +623,7 @@
                 <span class="section-tag">Let's Connect</span>
                 <h2 class="section-title">Get In Touch</h2>
             </div>
-            
+
             <div class="contact-wrapper">
                 <div class="contact-info" data-aos="fade-right">
                     <div class="contact-item">
@@ -571,7 +635,7 @@
                             <p>thiyanesh7777@gmail.com</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
@@ -581,7 +645,7 @@
                             <p>+91 7339307077</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -591,13 +655,15 @@
                             <p>Coimbatore, Tamil Nadu, India</p>
                         </div>
                     </div>
-                    
+
                     <div class="social-links">
-                        <a href="https://github.com/Thiyanesh07" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Thiyanesh07" target="_blank" class="social-link"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank" class="social-link"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <form class="contact-form" id="contactForm" data-aos="fade-left">
                     <div class="form-row">
                         <div class="form-group">
@@ -607,20 +673,20 @@
                             <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="text" name="subject" placeholder="Subject" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary btn-submit">
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
-                    
+
                     <div id="formStatus" class="form-status"></div>
                 </form>
             </div>
@@ -633,8 +699,10 @@
             <div class="footer-content">
                 <p>&copy; 2025 Thiyanesh. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="https://github.com/Thiyanesh07" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Thiyanesh07" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thiyanesh-d-6a7637331/" target="_blank"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -648,14 +716,15 @@
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             // Initialize EmailJS with your Public Key
             emailjs.init({
                 publicKey: "mCsJnxufqEcCgs0b5", // Replace with your EmailJS public key
             });
         })();
     </script>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
